@@ -1,0 +1,171 @@
+{% load bootstrap4 %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang='fa' dir="rtl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, shrink_to_fit=no">
+
+        <title>KHU-Booklet</title>
+		{% bootstrap_css %}
+		
+		<link rel="stylesheet" href="/static/css/styles.css">
+		<script src="/static/scripts/script.js"></script>
+		{% bootstrap_javascript jquery='full' %}
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<style>
+			.footer {
+				direction: ltr;
+			}
+		</style>
+
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<a class="navbar-brand" href="{% url 'index' %}">
+				<img src="{% static 'images/logo.png' %}" class="rounded-circle" alt="logo" height="30">
+				
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+				aria-controls="navbarCollapse"
+				aria-expended='false' aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="Collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<!--li class="nav-item">
+						<a class="nav-link" href="{% url 'index' %}">خونه
+							<i class="fas fa-house"></i>
+						</a>
+					</li-->
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+						  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">کتابخونه
+						  <i class="fas fa-book-open-reader"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item text-center" href="{% url 'categories_list' %}">دروس اختصاصی</a>
+							<a class="dropdown-item text-center" href="{% url 'general' %}">دروس عمومی</a>
+							<!--div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated Link</a-->
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'new_file' %}">آپلود
+							<i class="fas fa-arrow-up-from-bracket"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'about' %}">درباره ما
+							<i class="fa-regular fa-address-card"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'contact' %}">تماس با ما
+							<i class="fa-solid fa-phone"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{% url 'contact' %}">راهنما
+							<i class="fas fa-question"></i>
+						</a>
+					</li>
+					<!--li class="nav-item">
+						<a class="nav-link home-link" href="{% url 'index' %}">
+							<i class="gg-home"></i>
+						</a>
+					</li-->
+
+
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					{% if user.authenticated %}
+					   <li class="nav-item">
+						<span class="navbar-text">Hello, {{user.username}}!</span>
+					   </li>
+					   <li class="nav-item">
+						<a class="nav-link" href="{% url 'users:logout' %}">خروج
+							<i class="fas fa-arrow-right-from-bracket"></i>
+						</a>
+					   </li>
+					{% else %}
+					   <li class="nav-item">
+						<a class="nav-link" href="{% url 'users:register' %}">ثبت‌نام
+							<i class="fas fa-user-graduate"></i>
+						</a>
+					   </li>
+					   <li class="nav-item">
+						<a class="nav-link" href="{% url 'users:login' %}">ورود
+							<i class="fas fa-arrow-right-to-bracket"></i>
+						</a>
+					   </li>
+					{% endif %}      
+				</ul>
+			</div>
+		</nav>
+
+
+		<main role="main" class="container">
+			<div class="pb-2 mb-2 border-buttom">
+
+
+				{% block page_header %}
+
+				  <head>
+					<link rel="stylesheet" href="/static/css/styles.css">
+					<script src="/static/scripts/script.js"></script>	
+					<style>
+					  body {
+					   background-image: url('/static/images/bi11.jpeg'); background-size: cover;
+					  }
+					</style>
+				   </head>
+				   <body>
+			   
+						   <div class="p-5 text-center">
+							<h2 class="mb-3" style="color: white;">به وبسایت KHU-Booklet خوش اومدید!</h2>
+							<!--h4 class="mb-4">your place for sharing knowledge!</h4-->
+							<h4 class="lead" style="color:bisque;">جزوات و منابع درسی خودتون رو به راحتی دانلود یا آپلود کنید،</h4><br>
+							<h4 class="lead" style="color:bisque;">اینجا پر از منابع آموزشی متنوعه...</h4>
+							<br>
+							<a class="btn btn-lg btn-primary" href="{% url 'users:register' %}" role="button">ثبت‌نام
+								<i class="fas fa-angles-left"></i>
+							</a>
+						   </div>
+			   
+					   
+				   </body>
+
+				{% endblock page_header %}
+			</div>
+			<div>
+				{% block content %}
+	
+				{% endblock content %}
+			</div>
+		</main>
+
+
+			<footer class="footer fixed-bottom" id="myFooter2">
+		        <div class="container">
+			        <span class="text-muted">
+				       <div class="text-center p-4">
+					      © 2023 Copyright:
+					      <a class="text-reset fw-bold" href="https://khu-booklet.com/">khu-booklet.com</a>
+				       </div>
+			        </span>
+		        </div>
+	        </footer>
+	
+	</body>
+
+</html>
