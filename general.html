@@ -1,0 +1,255 @@
+{% extends 'BookletApp/base.html' %}
+
+{% block page_header %}
+   <head>
+	<link rel="stylesheet" href="/static/css/styles.css">
+	<script src="/static/scripts/script.js"></script>
+	<style>
+        body {
+         background-color: white;
+        }
+
+		.card {
+			width: 30%;
+			margin: 1%;
+			background-color: lightgray;
+			padding: 20px;
+			box-sizing: border-box;
+			float: left;
+			display: flex;
+			justify-content: center;
+		 }
+
+		 .card.name {
+			text-align: center;
+			
+		 }
+
+		 .clearfix::after {
+			content: "";
+			display: table;
+			clear: both;
+		 }
+      </style>
+   </head>	
+{% endblock page_header %}
+
+{% block content %}
+
+<body>
+    
+
+	<form class="form-inline my-2 my-lg-0 ml-auto" id="searchForm">
+		<input class="form-control mr-sm-2" type="search" placeholder="جست‌وجو" aria-label="Search">
+		<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">جست‌وجو</button>
+	</form>
+	<br> 
+
+
+	<div class="card">	
+		<div class="text-center">
+	       <a class="text-primary" href="">اندیشه اسلامی 1</a>
+
+		</div>   
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		  <a class="text-primary" href="">اندیشه اسلامی 2</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		   <a class="text-primary" href="">انسان در اسلام</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+    <div class="card">	
+		<div class="text-center">
+	       <a class="text-primary" href="">حقوق اجتماعی و سیاسی در اسلام</a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		  <a class="text-primary" href="">فلسفه اخلاق</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		   <a class="text-primary" href="">اخلاق اسلامی</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+    <div class="card">	
+		<div class="text-center">
+	       <a class="text-primary" href="">اخلاق خانواده</a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		  <a class="text-primary" href="">آیین زندگی</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		   <a class="text-primary" href="">عرفان عملی اسلامی</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+    <div class="card">	
+		<div class="text-center">
+	       <a class="text-primary" href="">انقلاب اسلامی ایران</a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		  <a class="text-primary" href="">آشنایی با قانون اساسی</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		   <a class="text-primary" href="">اندیشه سیاسی</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+    <div class="card">	
+		<div class="text-center">
+	       <a class="text-primary" href="">تاریخ تحلیلی صدر اسلام</a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		  <a class="text-primary" href="">تاریخ امامت</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		   <a class="text-primary" href="">تفسیر موضوعی قرآن</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+    <div class="card">	
+		<div class="text-center">
+	       <a class="text-primary" href="">تفسیر موضوعی نهج‌البلاغه</a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		  <a class="text-primary" href="">زبان فارسی</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		   <a class="text-primary" href="">زبان انگلیسی</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+    <div class="card">	
+		<div class="text-center">
+	       <a class="text-primary" href="">دانش خانواده و جمعیت</a>
+		</div>   
+	</div>
+
+    <div class="card">	
+		<div class="text-center">
+	       <a class="text-primary" href="defa">
+			دفاع مقدس</a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			اصول مدیریت
+		  </a>
+		</div>  
+	</div>
+
+	<div class="clearfix"></div>
+
+    <div class="card">	
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			اقتصاد
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			کارآفرینی
+		  </a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		   <a class="text-primary" href="">
+			حسابداری
+		   </a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+	
+	<div class="card">	
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			مهارت‌های زندگی دانشجویی
+		   </a>
+		</div>   
+	</div>
+
+	<!--div class="card">
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			کارآفرینی
+		  </a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<div class="text-center">
+		   <a class="text-primary" href="">
+			جامعه‌شناسی
+		   </a>
+		</div>   
+	</div-->
+
+	<div class="clearfix"></div>    
+
+
+
+
+
+</body>
+	 
+	<!--h6><a href="{% url 'new_category' %}">I haven't found my category</h6-->
+
+{% endblock content %}	
+
+

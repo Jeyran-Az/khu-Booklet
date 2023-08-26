@@ -1,0 +1,69 @@
+{% extends 'BookletApp/base.html' %}
+
+{% block page_header %}
+
+{% endblock page_header %}
+<head>
+	<link rel="stylesheet" href="/static/css/styles.css">
+	<script src="/static/scripts/script.js"></script>
+	<style>
+
+  </style>
+</head>	
+
+{% block content %}
+<body>
+  <div class="card mb-4">
+    <div class="card-body">
+      <h2>Upload a new file</h2>
+
+ <div class="container mt-5"> 
+   <form action="{% url 'files_list' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="professor">Professor:</label>
+      <input type="text" class="form-control" id="professor" name="professor">
+    </div>
+
+    <div class="form-group">
+        <label for="semester">Semester:</label>
+        <input type="text" class="form-control" id="semester" name="semester">
+    </div>
+
+    <div class="form-group">
+        <label for="boolean">Type:</label>
+        <select class="form-control" id="boolean">
+          <option>Specialized</option>
+          <option>General</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+      <label for="author">By:</label>
+      <input type="text" class="form-control" id="author" name="author">
+  </div>
+    
+    <div class="form-group">
+        <label for="file">Select file:</label>
+        <input type="file" class="form-control-file" id="file" name="file"><br>
+    </div>
+
+    <div class="form-group">
+      <label for="upload-time">Upload Time:</label>
+      <input type="time" class="form-control-file" id="upload-time" name="upload-time"><br>
+    </div>
+
+      <button type="submit" class="btn btn-primary" id="my-button">Upload</button>
+      <div class="spacer"></div>
+   </form>
+  </div>
+  </div>
+  </div>
+</body>
+{% endblock content %}

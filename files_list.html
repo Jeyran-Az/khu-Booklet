@@ -1,0 +1,38 @@
+{% extends 'BookletApp/base.html' %}
+
+{% block page_header %}
+   <h3>{{file}}</h3>
+{% endblock page_header %}
+
+{% block content %}
+
+   <p>
+	<a href="{% url 'new_file'%}">Add new file</a>
+   </p>
+
+    <ul>
+	{% for file in files %}
+       <div class="card mb-3">
+		<h4 class="card-header">
+			{{ file.uploaded_date|date:'M d, Y H:i' }}
+			
+		</h4>
+		<div class="card-body">
+			{{ file.name|linebreaks }}
+		</div> 
+	   </div>
+
+	{% empty %}
+	   <p>There is no file for this category yet.</p>   
+    {% endfor %}   
+
+
+	<a href= '/categories_list/'>back to Categories</a>
+
+{% endblock content %}	
+
+
+
+
+
+

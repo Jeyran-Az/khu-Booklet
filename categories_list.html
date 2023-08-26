@@ -1,0 +1,593 @@
+{% extends 'BookletApp/base.html' %}
+
+{% block page_header %}
+   <head>
+	<link rel="stylesheet" href="/static/css/styles.css">
+	<script src="/static/scripts/script.js"></script>
+	<style>
+        body {
+         background-color: white;
+		 
+        }
+
+		.card {
+			width: 30%;
+			margin: 1%;
+			background-color: lightgray;
+			padding: 20px;
+			box-sizing: border-box;
+			float: left;
+			display: flex;
+			justify-content: center;
+		 }
+
+		 .card.name {
+			text-align: center;
+			
+		 }
+
+		 .clearfix::after {
+			content: "";
+			display: table;
+			clear: both;
+		 }
+      </style>
+   </head>	
+{% endblock page_header %}
+
+{% block content %}
+
+<body>
+
+	<form class="form-inline my-2 my-lg-0 ml-auto" id="searchForm">
+		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">جست‌وجو</button>
+	</form>
+	<br> 
+
+
+	<div class="card">	
+		<img src="/static/images/probability.jpg" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="randomprocesses">
+			<h4>فرآیندهای تصادفی</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/fuzzy1.jpg" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="fuzzy">
+			<h4>مجموعه‌های فازی</h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/Graph.jpg" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="graph">
+		     <h4>نظریه گراف‌ها</h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">
+		<img src="/static/images/stat2.jpg" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="stat_methods">
+			 <h4>روش‌های آماری</h4>
+		   </a>
+		</div>   
+	</div>
+  
+	<div class="card">
+		<img src="/static/images/prob1 (3).jpg" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="probability1">
+			<h4>احتمال 1</h4>
+		   </a>
+		</div>   
+	</div>
+  
+	<div class="card">
+		<img src="/static/images/matlab.jpg" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="math_softwares">
+			<h4>نرم‌افزارهای ریاضی</h4>
+		  </a>
+		</div>  
+	</div>
+  
+	<div class="clearfix"></div>
+
+	<div class="card">
+		<img src="/static/images/ap (3).jpg" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="ad_programming">
+			<h4>برنامه‌سازی پیشرفته</h4>
+		   </a>
+		</div>   
+	</div>
+  
+	<div class="card">
+		<img src="/static/images/ra 6.png" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="ranalysis">
+			<h4>آنالیز ریاضی</h4>
+		   </a>
+		</div>   
+	</div>
+  
+	<div class="card">
+		<img src="/static/images/code.jpg" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="coding">
+			<h4>کدگذاری</h4>
+		  </a>
+		</div>  
+	</div>
+  
+	<div class="clearfix"></div>
+
+	<div class="card">
+		<img src="/static/images/or.jpg" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="lopt">
+			<h4>بهینه‌سازی خطی</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/NT1.jpg" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="numth">
+			<h4>نظریه اعداد</h4>
+		  </a>
+		</div>  
+	</div>
+  
+	<div class="card">
+		<img src="/static/images/cf.gif" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="comfunc">
+			<h4>توابع مختلط</h4>
+		   </a>
+		</div>   
+	</div>
+  
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/calcul.jpg" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4>ریاضی عمومی 1</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/prog.png" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4>مبانی کامپیوتر و برنامه‌نویسی</h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/ode 4.png" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4>معادلات دیفرانسیل ریاضی</h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/phisics.jpg" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4>فیزیک 1</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/calculus2.jpg" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4>ریاضی عمومی 2</h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/mor~.png" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4>مبانی علوم ریاضی</h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/matrix1.png" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4>مبانی ماتریس‌ها و جبر خطی</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/pra5.png" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4>مبانی آنالیز ریاضی</h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/pna.png" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4>مبانی آنالیز عددی</h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/prob 2.jpg" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4>مبانی احتمال</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/calc3.png" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4>ریاضی عمومی 3</h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/ra (3).jpg" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4>مبانی ترکیبیات</h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/alg1.png" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4>مبانی جبر</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/nla4.JPG" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4>جبر خطی عددی</h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/tode2.png" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4>نظریه معادلات دیفرانسیل</h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/pde2.png" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4>معادلات با مشتقات جزیی</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/ds1.jpg" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4>مبانی سیستم‌های دینامیکی</h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/topol.jpg" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4>توپولوژی عمومی</h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/geo1.jpg" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4>مبانی هندسه</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/russell.png" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4>مبانی منطق و نظریه مجموعه‌ها</h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/group (2).png" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4>نظریه گروه‌ها</h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/ap-alg.jpg" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4>جبر کاربردی</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/s-ode.jpg" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4>حل عددی معادلات دیفرانسیل</h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/geo-alg1.png" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4>هندسه جبری مقدماتی</h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/m-th.png" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4>نظریه اندازه و کاربردها</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/ra (3).jpg" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4>ترکیبیات</h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">	
+		<img src="/static/images/t-math.jpg" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4>آموزش ریاضی</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/ring.jpg" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4>نظریه حلقه‌ها و میدان</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/pna2.png" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4>آنالیز عددی</h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/nl-opt (2).png" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4>بهینه‌سازی غیرخطی</h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/ad-math.jpg" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4>زبان تخصصی</h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/sci-hist.jpg" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4>فلسفه علم</h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/t-math (2).jpg" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4>تاریخ ریاضیات</h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<!--div class="card">	
+		<img src="/static/images/" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4></h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4></h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4></h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4></h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4></h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4></h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="card">	
+		<img src="/static/images/" alt=""><br>
+		<div class="text-center">
+	       <a class="text-primary" href="">
+			<h4></h4>
+		   </a>
+		</div>   
+	</div>
+
+	<div class="card">
+		<img src="/static/images/" alt=""><br>
+		<div class="text-center">
+		  <a class="text-primary" href="">
+			<h4></h4>
+		</a>
+		</div>  
+	</div>
+
+	<div class="card">
+		<img src="/static/images/" alt=""><br>
+		<div class="text-center">
+		   <a class="text-primary" href="">
+		     <h4></h4>
+		</a>
+		</div>   
+	</div>
+
+	<div class="clearfix"></div-->
+
+
+
+</body>
+	
+
+<!----
+
+	{% for category in categories %}
+	    <div class="card mb-4">
+			<div class="card-body">   
+			 <a href="/files/">{{ category.name }}</a>
+			</div>
+	    </div>
+	{% empty %}
+	    <li><h3>No category have been added yet.</h3></li>
+	{% endfor %}  
+-->
+	 
+	<!--h6><a href="{% url 'new_category' %}">I haven't found my category</h6-->
+
+{% endblock content %}	
+
+

@@ -1,0 +1,251 @@
+{% extends 'BookletApp/base.html' %}
+{% load static %}
+
+{% block page_header %}
+  <head>
+    <link rel="stylesheet" href="/static/css/styles.css">
+	<script src="/static/scripts/script.js"></script>
+
+    <!--style>
+        .rating {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+            text-align: center;
+        }
+
+        .rating > span {
+            display: inline-block;
+            position: relative;
+            width: 1.1em;
+            color: #FFD700;
+            font-size: 20px;
+        }
+
+        .rating > span:hover::before,
+        .rating > span:hover ~span::before {
+            content: "\2605";
+            position: absolute;
+        }
+
+    </style-->
+
+    <style>
+        ul {
+            list-style-type: none;
+        }
+  
+    </style>
+  </head>
+
+{% endblock page_header %}
+
+{% block content %}
+
+<body>
+ <div class="card mb-4">
+  <div class="card-body">
+
+
+   <div class="container">
+    <div class="row">
+
+        <div class="col-md-4">
+            <img src="/static/images/exam.jpg" alt="image" class="img-fluid">
+        </div>
+
+        <div class="col-md-4 text-right">
+            <ul>
+                <li class="list-item">
+                    <span class="name" style="font-size: 20px;">نام استاد: </span>
+                    <span class="description" style="font-size: 20px; color: darkorange;"><b>استاد فاتحی</b></span>
+                   
+                    
+                </li>
+                <li class="list-item">
+                    <span class="name" style="font-size: 20px;">نیمسال: </span>
+                    <span class="description" style="font-size: 20px; color: darkorange;"><b>نامشخص</b></span>
+                    
+                  
+                </li>
+  
+                <li class="list-item">
+                    <span class="name" style="font-size: 20px;">فرمت: </span>
+                    <span class="description" style="font-size: 20px; color: darkorange;"><b>پی‌دی‌اف</b></span>
+                 
+                   
+                </li>
+                <li class="list-item">
+                    <span class="name" style="font-size: 20px;">تعداد صفحات: </span>
+                    <span class="description" style="font-size: 20px; color: darkorange;"><b>نامشخص</b></span>
+
+                    
+                </li>
+                
+                <!--li class="list-item">
+                    <span class="name"><b>بارگذاری توسط:</b></span>
+                    <span class="description">کیارش یوسفی</span>
+                   
+                </li--><br>
+
+                <li class="list-item">
+                    <a href="https://drive.google.com/file/d/1bKY1z-PtxV_QNWKdc2Y7NmhE9Jadirb2/view?usp=sharing" style="font-size: 20px;
+                    font-style: italic;">
+                        سوالات تشریحی
+                        </a><br>
+                        <a href="https://drive.google.com/drive/folders/1zLUnLkiOZ712nw8lh96L43EROVzhgOzw?usp=sharing" style="font-size: 20px;
+                        font-style: italic;">
+                        40 سوال اول (تستی)
+                        </a><br>
+                        <a href="https://drive.google.com/file/d/1b_fJmE8f3X42Vi3_3WsXeo-B0Lc0HyKS/view?usp=sharing" style="font-size: 20px;
+                        font-style: italic;">
+                        10 سوال آخر (تشریحی)
+                        </a><br>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-4">
+            <ul>
+                <h5 class="text-center" style="color:darkorange;"><b>امتیازدهی</b></h5><br>
+                <li>
+
+                    <div class="file text-center" id="file1">
+                        <h6 class="text-center" style="color: navy;"><b>سوالات تشریحی</b></h6>
+                        <div class="rating-container">
+                                <i class="star fas fa-star"></i>
+                                <i class="star fas fa-star"></i>
+                                <i class="star fas fa-star"></i>
+                                <i class="star fas fa-star"></i>
+                                <i class="star fas fa-star"></i>
+                        </div>
+                        <p class="text-center" style="font-style: italic; font-size: 15px;">میانگین امتیاز: <span id="average-rating-1">0</span></p>
+                    </div>    
+
+                    <!--div class="rating text-center">
+                        <input type="radio" id="star5" name="rating" value="5" />
+                        <label for="star5"><i class="far fa-star"></i></label>
+                        <input type="radio" id="star4" name="rating" value="4" />
+                        <label for="star4"><i class="far fa-star"></i></label>
+                        <input type="radio" id="star3" name="rating" value="3" />
+                        <label for="star3"><i class="far fa-star"></i></label>
+                        <input type="radio" id="star2" name="rating" value="2" />
+                        <label for="star2"><i class="far fa-star"></i></label>
+                        <input type="radio" id="star1" name="rating" value="1" />
+                        <label for="star1"><i class="far fa-star"></i></label>
+                    </div-->    
+
+                </li>
+                <li>
+                    <div class="file text-center" id="file2">
+                        <h6 class="text-center" style="color: navy;"><b>40 سوال اول</b></h6>
+                        <div class="rating-container">
+                                <i class="star fas fa-star"></i>
+                                <i class="star fas fa-star"></i>
+                                <i class="star fas fa-star"></i>
+                                <i class="star fas fa-star"></i>
+                                <i class="star fas fa-star"></i>
+                        </div>
+                        <p class="text-center" style="font-style: italic; font-size: 15px;">میانگین امتیاز: <span id="average-rating-2">0</span></p>
+                    </div> 
+                    
+                    <!--div class="rating text-center">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label for="star5"><i class="far fa-star"></i></label>
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label for="star4"><i class="far fa-star"></i></label>
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label for="star3"><i class="far fa-star"></i></label>
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label for="star2"><i class="far fa-star"></i></label>
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label for="star1"><i class="far fa-star"></i></label>
+                    </div-->   
+                </li>
+                <li>
+
+                    <div class="file text-center" id="file3">
+                        <h6 class="text-center" style="color: navy;"><b>10 سوال آخر</b></h6>
+                        <div class="rating-container">
+                                <i class="star fas fa-star"></i>
+                                <i class="star fas fa-star"></i>
+                                <i class="star fas fa-star"></i>
+                                <i class="star fas fa-star"></i>
+                                <i class="star fas fa-star"></i>
+                        </div>
+                        <p class="text-center" style="font-style: italic; font-size: 15px;">میانگین امتیاز: <span id="average-rating-3">0</span></p>
+                    </div> 
+                    
+                    
+                    <!--div class="rating text-center">
+                        <input type="radio" id="star5" name="rating" value="5" />
+                        <label for="star5"><i class="far fa-star"></i></label>
+                        <input type="radio" id="star4" name="rating" value="4" />
+                        <label for="star4"><i class="far fa-star"></i></label>
+                        <input type="radio" id="star3" name="rating" value="3" />
+                        <label for="star3"><i class="far fa-star"></i></label>
+                        <input type="radio" id="star2" name="rating" value="2" />
+                        <label for="star2"><i class="far fa-star"></i></label>
+                        <input type="radio" id="star1" name="rating" value="1" />
+                        <label for="star1"><i class="far fa-star"></i></label>
+                    </div--> 
+                </li>
+            </ul>
+           
+        </div>
+
+    </div>
+   </div>
+</div>
+</div>
+
+
+
+        
+                <!--h3>سوالات امتحانی</h3>
+                <h4 class="card-text">استاد فاتحی</h4>
+                <a href="https://drive.google.com/file/d/1bKY1z-PtxV_QNWKdc2Y7NmhE9Jadirb2/view?usp=sharing">سوالات تشریحی
+                </a>
+            </div>
+        </div>
+    </div>
+   </div-->  
+
+
+
+ 
+
+   <!--div class="container mt-4 text-md-center">
+    <h3>سوالات امتحانی</h3>
+    <div class="card mb-4 text-md-center">
+        <div class="card-body">
+            <p class="card-text">استاد فاتحی</p>
+            <a href="https://drive.google.com/file/d/1bKY1z-PtxV_QNWKdc2Y7NmhE9Jadirb2/view?usp=sharing" download class="btn btn-primary">Download</a>
+
+        </div>
+    </div-->
+    
+
+
+  <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.star').click(function() {
+        var value = $(this).attr('data-value');
+        var container = $(this).closest('.rating');
+        container.find('.star').removeClass('filled');
+        container.find('.star:lt(' + value + ')').addClass('filled');
+        container.find('input[type="hidden"]').val(value);
+      });
+    });
+  </script-->
+
+  <p class="text-center">فایل جدید داری؟
+    <a href="{% url 'new_file' %}">آپلودش کن!</a>
+  </p>
+
+
+
+</body>
+
+{% endblock content %}	

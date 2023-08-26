@@ -1,0 +1,210 @@
+{% extends 'BookletApp/base.html' %}
+{% load static %}
+
+{% block page_header %}
+<head>
+    <link rel="stylesheet" href="/static/css/styles.css">
+	<script src="/static/scripts/script.js"></script>
+
+    <style>
+        ul {
+            list-style-type: none;
+        }
+  
+    </style>
+
+</head>    
+
+{% endblock page_header %}
+
+{% block content %}
+<body>
+    <div class="card mb-4">
+        <div class="card-body">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <img src="/static/images/booklet2.jpg" alt="image" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-4 text-right">
+                        <ul>
+                            <li class="list-item">
+                                <span class="name" style="font-size: 20px;">نام استاد: </span>
+                                <span class="description" style="font-size: 20px; color: darkorange;"><b>دکتر مهدی چراخلو</b></span>
+                               
+                                
+                            </li>
+                            <li class="list-item">
+                                <span class="name" style="font-size: 20px;">نیمسال: </span>
+                                <span class="description" style="font-size: 20px; color: darkorange;"><b>1401-1402</b></span>
+                            </li>
+
+                        </li>
+                        <li class="list-item">
+                            <span class="name" style="font-size: 20px;">زبان برنامه‌نویسی: </span>
+                            <span class="description" style="font-size: 20px; color: darkorange;"><b>پایتون</b></span>
+                        </li>
+              
+                            <li class="list-item">
+                                <span class="name" style="font-size: 20px;">فرمت: </span>
+                                <span class="description" style="font-size: 20px; color: darkorange;"><b>پی‌دی‌اف</b></span>
+                             
+                               
+                            </li>
+                            <li class="list-item">
+                                <span class="name" style="font-size: 20px;">تعداد صفحات: </span>
+                                <span class="description" style="font-size: 20px; color: darkorange;"><b>25 صفحه</b></span>
+            
+                                
+                            </li><br>
+                            
+                            <li class="list-item">
+                                <span class="name" style="font-size: 20px;">توسط: </span>
+                                <span class="description" style="font-size: 20px; color: orangered;"><b>جیران عزیزی</b></span>
+                               
+                            </li>
+            
+                            <li class="list-item">
+                                <a href="https://drive.google.com/file/d/1bKY1z-PtxV_QNWKdc2Y7NmhE9Jadirb2/view?usp=sharing" style="font-size: 20px;
+                                font-style: italic;">
+                                      جزوه بخش هوش مصنوعی
+                                    </a><br>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <ul>
+                            <h5 class="text-center" style="color:darkorange;"><b>امتیازدهی</b></h5><br>
+                            <li>
+
+                                <div class="file text-center" id="file1">
+                                    <h6 class="text-center" style="color: navy;"><b>جزوه بخش هوش مصنوعی</b></h6>
+                                    <div class="rating-container">
+                                            <i class="star fas fa-star"></i>
+                                            <i class="star fas fa-star"></i>
+                                            <i class="star fas fa-star"></i>
+                                            <i class="star fas fa-star"></i>
+                                            <i class="star fas fa-star"></i>
+                                    </div>
+                                    <p class="text-center" style="font-style: italic; font-size: 15px;">میانگین امتیاز: <span id="average-rating-1">0</span></p>
+                                </div>    
+                            </li>
+                        </ul>
+                    </div>        
+                </div>
+            </div>        
+        </div>   
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <img src="/static/images/booklet2.jpg" alt="image" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-4 text-right">
+                        <ul>
+                            <li class="list-item">
+                                <span class="name" style="font-size: 20px;">نام استاد: </span>
+                                <span class="description" style="font-size: 20px; color: darkorange;"><b>دکتر مهدی چراخلو</b></span>
+                               
+                                
+                            </li>
+                            <li class="list-item">
+                                <span class="name" style="font-size: 20px;">نیمسال: </span>
+                                <span class="description" style="font-size: 20px; color: darkorange;"><b>1401-1402</b></span>
+                            </li>
+
+                        </li>
+                        <li class="list-item">
+                            <span class="name" style="font-size: 20px;">زبان برنامه‌نویسی: </span>
+                            <span class="description" style="font-size: 20px; color: darkorange;"><b>پایتون</b></span>
+                        </li>
+              
+                            <li class="list-item">
+                                <span class="name" style="font-size: 20px;">فرمت: </span>
+                                <span class="description" style="font-size: 20px; color: darkorange;"><b>پی‌دی‌اف</b></span>
+                             
+                               
+                            </li>
+                            <li class="list-item">
+                                <span class="name" style="font-size: 20px;">تعداد صفحات: </span>
+                                <span class="description" style="font-size: 20px; color: darkorange;"><b>76 صفحه</b></span>
+            
+                                
+                            </li><br>
+                            
+                            <li class="list-item">
+                                <span class="name" style="font-size: 20px;">توسط: </span>
+                                <span class="description" style="font-size: 20px; color: orangered;"><b>تهمینه علیجانی</b></span>
+                               
+                            </li>
+            
+                            <li class="list-item">
+                                <a href="https://drive.google.com/file/d/12Hv3Txz_og28EZ4ar10hTlZV8mBf-0nE/view?usp=sharing" style="font-size: 20px;
+                                font-style: italic;">
+                                      جزوه بخش هوش مصنوعی
+                                    </a><br>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <ul>
+                            <h5 class="text-center" style="color:darkorange;"><b>امتیازدهی</b></h5><br>
+                            <li>
+
+                                <div class="file text-center" id="file1">
+                                    <h6 class="text-center" style="color: navy;"><b>جزوه بخش هوش مصنوعی</b></h6>
+                                    <div class="rating-container">
+                                            <i class="star fas fa-star"></i>
+                                            <i class="star fas fa-star"></i>
+                                            <i class="star fas fa-star"></i>
+                                            <i class="star fas fa-star"></i>
+                                            <i class="star fas fa-star"></i>
+                                    </div>
+                                    <p class="text-center" style="font-style: italic; font-size: 15px;">میانگین امتیاز: <span id="average-rating-1">0</span></p>
+                                </div>    
+                            </li>
+                        </ul>
+                    </div>        
+                </div>
+            </div>        
+        </div>   
+    </div>        
+    
+    
+</body>
+
+   <!--div class="container mt-4">
+    <h2>Advanced Programming</h2>
+
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Booklet</h5>
+            <p class="card-text">Dr.Mahdi Charakhloo- 1401</p>
+            <p>By: Jeyran Azizi</p>
+            <a href="/Downloads/AI_ (1).pdf" download class="btn btn-primary">Download</a>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Booklet</h5>
+            <p class="card-text">Dr.Mahdi Charakhloo- 1401</p>
+            <p>By: Tahmineh Alijani</p>
+            <a href="/Downloads/AI.pdf" download class="btn btn-primary">Download</a>
+        </div>
+    </div-->
+
+
+{% endblock content %}	
