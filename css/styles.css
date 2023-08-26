@@ -1,0 +1,72 @@
+@font-face {
+    font-family: vazir;
+    font-style: normal;
+    font-weight: 950;
+    src: url('/fonts/Vazir-Black.eot');
+    src: url('/fonts/Vazir-Black.woff') format('woff'),
+         url('/fonts/Vazir-Black.ttf') format('ttf'),
+         url('/fonts/Vazir-Black.woff2') format('woff2');
+}
+
+body {
+    font-family: vazir, sans-serif;
+    
+}
+
+
+h2.mb-3 {
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+h4.lead {
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
+
+#myFooter {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    -webkit-text-fill-color: white;
+    padding-top: 20px;
+    
+}
+
+.content {
+    padding-bottom: 60px;
+}
+
+
+.star {
+    font-size: 25px;
+    color: gray;
+    cursor: pointer;
+}
+
+.filled {
+    color: gold;
+}
+
+
+
+.container {
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+  
+.column:not(:last-child) {
+    margin-right: 10px;
+  }
+
+
+
+
+
+
+
