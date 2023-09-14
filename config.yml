@@ -1,3 +1,4 @@
 markdown: kramdown
 theme: jekyll-theme-cayman
-plugins: - jekyll-paginate
+plugins:
+  - jekyll-paginate
