@@ -1,3 +1,4 @@
+layout: default
 <!DOCTYPE html>
 <html lang='fa' dir="rtl">
 	<head>
