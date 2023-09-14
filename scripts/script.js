@@ -48,3 +48,17 @@ files.forEach(file => {
         // You can add further logic here to calculate the mean of scorings
     }
 });
+
+
+
+
+
+// Using plain JavaScript
+document.querySelector('.dropdown-toggle').addEventListener('click', function() {
+  document.querySelector('.dropdown-menu').classList.toggle('show');
+});
+
+// Using jQuery
+$('.dropdown-toggle').on('click', function() {
+  $('.dropdown-menu').toggleClass('show');
+});
