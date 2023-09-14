@@ -1,13 +1,10 @@
-
-
-
 <!DOCTYPE html>
 <html lang='fa' dir="rtl">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0, shrink_to_fit=no">
 
-        <title>KHU-Booklet</title>
+                <title>KHU-Booklet</title>
 		
 		<link rel="stylesheet" href="bootstrap4/bootstrap.min.css">
                 <script src="bootstrap4/bootstrap.min.js"></script>
@@ -31,10 +28,11 @@
 
 	<body>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			
 			<a class="navbar-brand" href="index.html">
 				<img src="logo.png" alt="logo" height="30">
-				
 			</a>
+			
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
 				aria-controls="navbarCollapse"
 				aria-expended='false' aria-label="Toggle navigation">
@@ -89,11 +87,12 @@
 
 
 				</ul>
-				<ul class="navbar-nav ml-auto">
+				<!--ul class="navbar-nav ml-auto">
+					
 					{% if user.authenticated %}
 					   <li class="nav-item">
 						<span class="navbar-text">Hello, {{user.username}}!</span>
-					   </li>
+				           </li> 
 					   <li class="nav-item">
 						<a class="nav-link" href="{% url 'users:logout' %}">خروج
 							<i class="fas fa-arrow-right-from-bracket"></i>
@@ -111,7 +110,7 @@
 						</a>
 					   </li>
 					{% endif %}      
-				</ul>
+				</ul-->
 			</div>
 		</nav>
 
