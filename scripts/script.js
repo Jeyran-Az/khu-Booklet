@@ -52,7 +52,7 @@ files.forEach(file => {
 
 
 
-
+/*
 // Using plain JavaScript
 document.querySelector('.dropdown-toggle').addEventListener('click', function() {
   document.querySelector('.dropdown-menu').classList.toggle('show');
@@ -62,3 +62,4 @@ document.querySelector('.dropdown-toggle').addEventListener('click', function() 
 $('.dropdown-toggle').on('click', function() {
   $('.dropdown-menu').toggleClass('show');
 });
+*/
